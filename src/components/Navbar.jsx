@@ -15,8 +15,7 @@ function Navbar() {
 
   const pages = [
     { name: "Home", path: "/" },
-    { name: "Selected Work", path: "/work" },
-    { name: "About Me", path: "/about" },
+    { name: "Course", path: "/course" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -54,6 +53,12 @@ function Navbar() {
 
   return (
     <>
+      <div>
+
+        <span>A'rafi Laksmana</span>
+
+      </div>
+
       {/* Overlay */}
       <AnimatePresence>
         {isExpanded && (
