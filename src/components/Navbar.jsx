@@ -34,7 +34,6 @@ function Navbar() {
     navigate(pages[nextIndex].path);
   };
 
-  // Detect click outside navbar
   useEffect(() => {
     if (!isExpanded) return;
 
@@ -68,12 +67,18 @@ function Navbar() {
         )}
       </AnimatePresence>
 
-      <div
+      {/* Navbar Container with Scale Animation */}
+      <motion.div
         ref={navbarRef}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-[#000000CC] text-white rounded-[32px] px-4 py-3 shadow-md min-w-[220px]"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-[#000000CC] text-white rounded-[32px] px-3 py-3 shadow-md min-w-[220px]"
+        initial={false}
+        animate={{
+          scale: isExpanded ? 1.05 : 1,
+          opacity: 1,
+        }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
       >
         {isExpanded ? (
-          // Expanded Mode
           <div className="flex gap-4 items-center justify-between">
             <button
               onClick={goToPrev}
@@ -90,7 +95,7 @@ function Navbar() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute text-base font-medium tracking-tight"
+                  className="absolute text-sm font-medium tracking-tight"
                 >
                   {pages[currentIndex]?.name || "Halaman Tidak Dikenal"}
                 </motion.div>
@@ -105,7 +110,6 @@ function Navbar() {
             </button>
           </div>
         ) : (
-          // Default Mode
           <div className="flex items-center justify-between">
             <div className="relative h-5 w-28 flex items-center justify-start overflow-hidden">
               <AnimatePresence mode="wait">
@@ -115,7 +119,7 @@ function Navbar() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute text-sm font-medium tracking-tight"
+                  className="absolute text-base font-medium tracking-tight ml-2"
                 >
                   {pages[currentIndex]?.name || "Halaman Tidak Dikenal"}
                 </motion.div>
@@ -130,7 +134,7 @@ function Navbar() {
             </button>
           </div>
         )}
-      </div>
+      </motion.div>
     </>
   );
 }
