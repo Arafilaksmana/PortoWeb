@@ -14,7 +14,7 @@ function Home() {
             <span className="text-black/50">Arfilaks.dev@gmail.com</span>
           </div>
           <div className="w-full lg:w-2/3">
-            <span className="text-4xl lg:text-5xl">
+            <span className="text-5xl">
               I am
               <div className="w-[100px] h-14 inline-block align-middle mx-2">
                 <img
