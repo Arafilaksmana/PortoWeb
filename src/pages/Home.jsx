@@ -8,13 +8,13 @@ function Home() {
             Based in <br /> Yogyakarta, IDN
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-3">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
           <div className="flex flex-col w-full lg:w-1/3">
             <span>Get in touch</span>
             <span className="text-black/50">Arfilaks.dev@gmail.com</span>
           </div>
           <div className="w-full lg:w-2/3">
-            <span className="text-5xl">
+            <span className="text-4xl lg:text-5xl">
               I am
               <div className="w-[100px] h-14 inline-block align-middle mx-2">
                 <img
@@ -23,7 +23,7 @@ function Home() {
                   className="w-full h-full object-contain rounded-full"
                 />
               </div>
-              Dirga. A Frontend  & Designer crafting user-focused interfaces.
+              Dirga. A Frontend  & Designer who creates solution based on user needs.
             </span>
           </div>
         </div>
