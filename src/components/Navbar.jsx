@@ -70,7 +70,7 @@ function Navbar() {
       {/* Navbar Container with Scale Animation */}
       <motion.div
         ref={navbarRef}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 bg-[#000000CC] text-white rounded-[32px] px-3 py-3 shadow-md min-w-[220px]"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 box-border bg-[#000000CC] text-white rounded-[32px] px-2 py-2 shadow-md min-w-[220px]"
         initial={false}
         animate={{
           scale: isExpanded ? 1.05 : 1,
@@ -82,7 +82,7 @@ function Navbar() {
           <div className="flex gap-4 items-center justify-between">
             <button
               onClick={goToPrev}
-              className="flex justify-center items-center bg-[#FFFFFF1A] p-2 rounded-full hover:scale-110 transition-transform duration-200"
+              className="flex justify-center items-center bg-[#FFFFFF1A] p-[10px] rounded-full hover:scale-110 transition-transform duration-200"
             >
               <IoIosArrowBack className="text-[11px]" />
             </button>
@@ -104,7 +104,7 @@ function Navbar() {
 
             <button
               onClick={goToNext}
-              className="flex justify-center items-center bg-[#FFFFFF1A] p-2 rounded-full hover:scale-110 transition-transform duration-200"
+              className="flex justify-center items-center bg-[#FFFFFF1A] p-[10px] rounded-full hover:scale-110 transition-transform duration-200"
             >
               <IoIosArrowForward className="text-[11px]" />
             </button>
@@ -128,7 +128,7 @@ function Navbar() {
 
             <button
               onClick={() => setIsExpanded(true)}
-              className="flex justify-center items-center bg-[#FFFFFF1A] p-2 rounded-full hover:scale-110 transition-transform duration-200"
+              className="flex justify-center items-center bg-[#FFFFFF1A] p-[10px] rounded-full hover:scale-110 transition-transform duration-200"
             >
               <IoIosArrowDown className="text-[11px]" />
             </button>
