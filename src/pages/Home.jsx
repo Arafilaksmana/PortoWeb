@@ -1,8 +1,8 @@
 function Home() {
   return (
-    <div className="px-2 lg:px-8 pt-4">
+    <div className="px-3 lg:px-8 pt-4">
       <div className="flex flex-col">
-        <div className="flex h-[40dvh]">
+        <div className="flex h-[20dvh] lg:h-[40dvh]">
           <div className="w-1/3 ">Dirga</div>
           <div className="">
             Based in <br /> Yogyakarta, IDN
