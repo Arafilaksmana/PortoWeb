@@ -53,12 +53,6 @@ function Navbar() {
 
   return (
     <>
-      <div>
-
-        <span>A'rafi Laksmana</span>
-
-      </div>
-
       {/* Overlay */}
       <AnimatePresence>
         {isExpanded && (
