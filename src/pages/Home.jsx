@@ -3,9 +3,12 @@ function Home() {
     <div className="px-3 lg:px-8 pt-4">
       <div className="flex flex-col">
         <div className="flex h-[20dvh] lg:h-[40dvh]">
-          <div className="w-1/3 ">Dirga</div>
-          <div className="">
-            Based in <br /> Yogyakarta, IDN
+          <div className="w-1/2 lg:w-1/3">Dirga</div>
+          <div className="w-1/2 lg:w-1/3 flex justify-end lg:justify-start">
+            <span className="flex flex-col leading-5 mt-1">
+              Based in
+              <span className="text-black/50">Yogyakarta, IDN</span>
+            </span>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
@@ -23,7 +26,8 @@ function Home() {
                   className="w-full h-full object-contain rounded-full"
                 />
               </div>
-              Dirga. A Frontend  & Designer who creates solution based on user needs.
+              Dirga. A Frontend & Designer who creates solution based on user
+              needs.
             </span>
           </div>
         </div>
