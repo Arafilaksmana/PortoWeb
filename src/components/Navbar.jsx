@@ -70,7 +70,7 @@ function Navbar() {
       {/* Navbar Container with Scale Animation */}
       <motion.div
         ref={navbarRef}
-        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 box-border bg-[#000000CC] text-white rounded-[32px] px-2 py-2 shadow-md min-w-[220px]"
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 box-border bg-[#000000CC] text-white rounded-[32px] px-3 py-3 shadow-md min-w-[200px]"
         initial={false}
         animate={{
           scale: isExpanded ? 1.05 : 1,
