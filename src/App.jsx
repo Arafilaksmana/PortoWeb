@@ -8,11 +8,11 @@ import Contact from "./pages/Contact.jsx";
 function App() {
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/course" element={<Course />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/course" element={<Course/>} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
   );
