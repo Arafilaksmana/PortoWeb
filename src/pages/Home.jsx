@@ -5,8 +5,8 @@ function Home() {
         <div className="flex h-[20dvh] lg:h-[40dvh]">
           <div className="w-1/2 lg:w-1/3">Dirga</div>
           <div className="w-1/2 lg:w-1/3 flex justify-end lg:justify-start">
-            <span className="flex flex-col leading-5 mt-1">
-              Based in
+            <span className="flex flex-col leading-5 mt-0 lg:mt-1">
+              <span className="hidden lg:block">Based in</span>
               <span className="text-black/50">Yogyakarta, IDN</span>
             </span>
           </div>
