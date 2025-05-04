@@ -119,7 +119,7 @@ function Navbar() {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute text-base font-medium tracking-tight ml-2"
+                  className="absolute text-base lg:text-sm font-medium tracking-tight ml-2"
                 >
                   {pages[currentIndex]?.name || "Halaman Tidak Dikenal"}
                 </motion.div>

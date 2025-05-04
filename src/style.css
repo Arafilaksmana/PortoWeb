@@ -1,1 +1,20 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --font-regular: regular, "sans-serif";
+  --font-light: light, "sans-serif";
+}
+
+@font-face {
+  font-family: "Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/inter_regular.ttf");
+}
+
+
+body{
+    font-family: "Regular"
+}
