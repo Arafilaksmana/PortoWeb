@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="px-8 pt-4">
+    <div className="px-2 lg:px-8 pt-4">
       <div className="flex flex-col">
         <div className="flex h-[40dvh]">
           <div className="w-1/3 ">Dirga</div>
