@@ -27,12 +27,17 @@ function Home() {
           {/* Kiri */}
           <div className="flex flex-col w-full lg:w-1/3">
             <div className="overflow-hidden">
-              <motion.div {...fadeInUp}>
+              <motion.div 
+              {...fadeInUp}
+              transition={{ delay: 0.2, duration: 0.4 }}
+              >
                 <span>Get in touch</span>
               </motion.div>
             </div>
             <div className="overflow-hidden">
-              <motion.div {...fadeInUp}>
+              <motion.div {...fadeInUp}
+              transition={{ delay: 0.2, duration: 0.4 }}
+              >
                 <span className="text-black/50">Arfilaks.dev@gmail.com</span>
               </motion.div>
             </div>
@@ -41,14 +46,17 @@ function Home() {
           {/* Kanan */}
           <div className="w-full lg:w-2/3">
             <div className="overflow-hidden">
-              <motion.div {...fadeInUp}>
+              <motion.div
+                {...fadeInUp}
+                transition={{ delay: 0.2, duration: 0.4 }}
+              >
                 <span className="text-5xl tracking-tight">
                   I am
-                  <div className="w-[100px] h-14 inline-block align-middle mx-2">
+                  <div className="w-[140px] h-14 inline-block align-middle mx-2">
                     <img
                       src="PROPICT.jpg"
                       alt="Dirga"
-                      className="w-full h-full object-contain rounded-full"
+                      className="w-full h-full object-cover object-top rounded-full"
                     />
                   </div>
                   Dirga. A Frontend & Designer who creates solution based on
