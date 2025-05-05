@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Home() {
   const fadeInUp = {
@@ -7,6 +7,17 @@ function Home() {
     animate: { y: 0, opacity: 1 },
     transition: { duration: 0.5, ease: "easeOut" },
   };
+
+  const words = ["Frontend", "Optimize", "Interface"];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 2000); // 2 detik
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="px-3 lg:px-8 pt-4">
@@ -22,21 +33,22 @@ function Home() {
           </div>
         </div>
 
-        {/* Konten dengan animasi muncul dari wadah */}
+        {/* Konten */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
           {/* Kiri */}
           <div className="flex flex-col w-full lg:w-1/3">
             <div className="overflow-hidden">
-              <motion.div 
-              {...fadeInUp}
-              transition={{ delay: 0.2, duration: 0.4 }}
+              <motion.div
+                {...fadeInUp}
+                transition={{ delay: 0.2, duration: 0.4 }}
               >
                 <span>Get in touch</span>
               </motion.div>
             </div>
             <div className="overflow-hidden">
-              <motion.div {...fadeInUp}
-              transition={{ delay: 0.2, duration: 0.4 }}
+              <motion.div
+                {...fadeInUp}
+                transition={{ delay: 0.2, duration: 0.4 }}
               >
                 <span className="text-black/50">Arfilaks.dev@gmail.com</span>
               </motion.div>
@@ -59,8 +71,20 @@ function Home() {
                       className="w-full h-full object-cover object-top rounded-full"
                     />
                   </div>
-                  Dirga. A Frontend & Designer who creates solution based on
-                  user needs.
+                  Dirga. A Frontend & Designer who creates{" "}
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={words[currentWordIndex]}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.5 }}
+                      className="text-black/60 inline-block w-[190px]"
+                    >
+                      {words[currentWordIndex]}
+                    </motion.span>
+                  </AnimatePresence>{" "}
+                  based on user needs.
                 </span>
               </motion.div>
             </div>
