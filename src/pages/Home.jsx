@@ -52,7 +52,7 @@ function Home() {
               >
                 <span className="text-5xl tracking-tight">
                   I am
-                  <div className="w-[120px] lg:w-[140px] h-14 inline-block align-middle mx-2">
+                  <div className="w-[110px] lg:w-[140px] h-14 inline-block align-middle mx-2">
                     <img
                       src="PROPICT.jpg"
                       alt="Dirga"
