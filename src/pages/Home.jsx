@@ -36,7 +36,7 @@ function Home() {
         {/* Konten */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
           {/* Kiri */}
-          <div className="flex flex-col w-full lg:w-1/3 hidden lg:block">
+          <div className="flex-col w-full lg:w-1/3 hidden lg:flex">
             <div className="overflow-hidden">
               <motion.div
                 {...fadeInUp}
@@ -62,7 +62,7 @@ function Home() {
                 {...fadeInUp}
                 transition={{ delay: 0.2, duration: 0.4 }}
               >
-                <span className="text-7xl lg:text-5xl tracking-tight">
+                <span className="text-6xl lg:text-5xl tracking-tight">
                   I am
                   <div className="w-[110px] lg:w-[140px] h-14 inline-block align-middle mx-2">
                     <img
