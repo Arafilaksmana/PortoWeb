@@ -23,7 +23,7 @@ function Home() {
     <div className="px-3 lg:px-8 pt-4">
       <div className="flex flex-col">
         {/* Header */}
-        <div className="flex h-[20dvh] lg:h-[40dvh]">
+        <div className="flex h-[15dvh] lg:h-[40dvh]">
           <div className="w-1/2 lg:w-1/3">Dirga</div>
           <div className="w-1/2 lg:w-1/3 flex justify-end lg:justify-start">
             <span className="flex flex-col leading-5 mt-0 lg:mt-1">
@@ -36,7 +36,7 @@ function Home() {
         {/* Konten */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-0">
           {/* Kiri */}
-          <div className="flex flex-col w-full lg:w-1/3">
+          <div className="flex flex-col w-full lg:w-1/3 hidden lg:block">
             <div className="overflow-hidden">
               <motion.div
                 {...fadeInUp}
@@ -62,7 +62,7 @@ function Home() {
                 {...fadeInUp}
                 transition={{ delay: 0.2, duration: 0.4 }}
               >
-                <span className="text-5xl tracking-tight">
+                <span className="text-7xl lg:text-5xl tracking-tight">
                   I am
                   <div className="w-[110px] lg:w-[140px] h-14 inline-block align-middle mx-2">
                     <img
@@ -79,7 +79,7 @@ function Home() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.5 }}
-                      className="text-black/60 inline-block w-[190px]"
+                      className="text-black/60 inline-block"
                     >
                       {words[currentWordIndex]}
                     </motion.span>
