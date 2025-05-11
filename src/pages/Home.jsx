@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <>
-      <div className="bg-[url('/arafi.png')] bg-cover bg-top bg-no-repeat h-screen w-full flex">
-        <div className="text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
-          {/* Bungkus tiap baris teks dengan overflow-hidden agar terlihat seperti muncul dari bawah kontainer */}
+      <div className="relative h-dvh w-full flex">
+
+        <img src="arafi.png" className="w-full h-full absolute inset-0 object-top object-cover z-0" />
+
+        <div className="relative z-10 text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
