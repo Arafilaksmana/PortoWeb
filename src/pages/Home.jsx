@@ -1,4 +1,7 @@
 function Home() {
+
+
+  
   return (
     <>
       <div className="bg-[url('/arafi.png')] bg-cover bg-top bg-no-repeat min-h-[100svh] w-full flex">
