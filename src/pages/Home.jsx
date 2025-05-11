@@ -1,14 +1,10 @@
 import { motion } from "framer-motion";
 
-export default function Home(){
-  return(
+export default function Home() {
+  return (
     <div>
-
-
       <div className="bg-[url('arafi.png')] bg-cover bg-top min-h-[100svh] w-full flex overflow-hidden">
-
-
-      <div className="text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+        <div className="text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
@@ -28,12 +24,8 @@ export default function Home(){
             </motion.div>
           </div>
         </div>
-
-
       </div>
-
-
-
+      <div className="h-dvh bg-black"></div>
     </div>
-  )
+  );
 }
