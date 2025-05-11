@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Home() {
   return (
     <>
-      <div className="relative h-dvh w-full flex">
+      <div className="relative h-dvh w-full flex overflow-hidden">
 
         <img src="arafi.png" className="w-full h-full absolute inset-0 object-top object-cover z-0" />
 
