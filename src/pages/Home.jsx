@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div>
-      <div className="bg-[url('arafi.png')] bg-cover bg-top min-h-[100svh] w-full flex overflow-hidden">
+      <div className="bg-[url('arafi.png')] bg-cover bg-top min-h-[100svh] w-full flex">
         <div className="text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
