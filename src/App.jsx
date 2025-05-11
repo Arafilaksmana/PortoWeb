@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";  // Impor AnimatePresence
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home.jsx";
+import GreetingPage from "./pages/GreetingPage.jsx";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
@@ -27,9 +29,12 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes>
+          <Route path="/" element={<GreetingPage />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </AnimatePresence>
     </Router>
   );
 }
