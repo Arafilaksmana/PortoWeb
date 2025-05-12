@@ -20,6 +20,20 @@
   font-display: swap;
   src: url("./assets/fonts/inter_medium.ttf");
 }
+@font-face {
+  font-family: "Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./assets/fonts/inter_light.ttf");
+}
+@font-face {
+  font-family: "IBM";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/IBMPlexSans-Regular.ttf");
+}
 
 body{
     font-family: "Regular"
