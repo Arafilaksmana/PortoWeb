@@ -65,7 +65,11 @@ export default function Home() {
       </div>
 
       <div className="bg-black h-dvh">
-        <div></div>
+        <h3 className="text-white">
+          I blend logic and aesthetics to craft digital spaces that feel alive.
+          Every line of code I write shapes an experience that others can feel
+          and use.
+        </h3>
       </div>
     </>
   );
