@@ -1,15 +1,53 @@
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import EntryOverlay from "../components/EntryOverlay.jsx";
 
 export default function Home() {
+  const [scrollY, setScrollY] = useState(0);
+  const [showOverlay, setShowOverlay] = useState(true);
+  const [overlayExited, setOverlayExited] = useState(false);
+
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    // Setup overlay timeout to hide it after 2 seconds
+    const timer = setTimeout(() => {
+      setShowOverlay(false);
+    }, 1800);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timer);
+    };
+  }, []);
+
+  // Callback when overlay exit animation completes
+  const handleOverlayExitComplete = () => {
+    setOverlayExited(true);
+  };
+
+  const backgroundPosition = `center ${scrollY * 0.1}px`;
+
   return (
-    <div>
-      <div className="bg-[url('arafi.png')] bg-cover bg-top min-h-[100svh] w-full flex">
-        <div className="text-white text-3xl leading-9 ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+    <>
+      <EntryOverlay
+        show={showOverlay}
+        onExitComplete={handleOverlayExitComplete}
+      />
+
+      <div
+        style={{ backgroundPosition }}
+        className="bg-[url('arafi.png')] bg-top bg-auto lg:bg-cover w-full min-h-dvh flex"
+      >
+        <div className="text-white text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
-              animate={{ y: "0%", opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              animate={overlayExited ? { y: "0%", opacity: 1 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
             >
               I'm Dirga
             </motion.div>
@@ -17,15 +55,18 @@ export default function Home() {
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
-              animate={{ y: "0%", opacity: 1 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+              animate={overlayExited ? { y: "0%", opacity: 1 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             >
               Frontend & Designer
             </motion.div>
           </div>
         </div>
       </div>
-      <div className="h-dvh bg-black"></div>
-    </div>
+
+      <div className="bg-black h-dvh">
+        <div></div>
+      </div>
+    </>
   );
 }
