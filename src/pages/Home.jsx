@@ -40,7 +40,7 @@ export default function Home() {
 
       <div
         style={{ backgroundPosition }}
-        className="bg-[url('/arafi.png')] bg-top bg-auto lg:bg-cover w-full min-h-dvh flex"
+        className="bg-[url('/arafi.png')] bg-top bg-cover lg:bg-cover w-full min-h-dvh flex"
       >
         <div className="text-white text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
