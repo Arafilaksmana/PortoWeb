@@ -91,7 +91,7 @@ export default function Home() {
               <div className="text-3xl uppercase text-white mt-3">
                 Programming Instructor
               </div>
-              <div className="flex justify-between font-light ">
+              <div className="flex justify-between font-light text-[14px]">
                 <div className="mt-3">TIKOM</div>
                 <div className="mt-3">2024</div>
               </div>
@@ -102,7 +102,7 @@ export default function Home() {
               <div className="text-3xl uppercase text-white mt-3">
                 Frontend Developer
               </div>
-              <div className="flex justify-between font-light ">
+              <div className="flex justify-between font-light text-[14px]">
                 <div className="mt-3">DEVART</div>
                 <div className="mt-3">2024</div>
               </div>
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="text-3xl uppercase text-white mt-3">
                 Frontend Developer
               </div>
-              <div className="flex justify-between font-light ">
+              <div className="flex justify-between font-light text-[14px]">
                 <div className="mt-3">SCHOLARIUM</div>
                 <div className="mt-3">2023</div>
               </div>
