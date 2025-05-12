@@ -40,9 +40,11 @@ export default function Home() {
 
       <div
         style={{ backgroundPosition }}
-        className="bg-[url('/arafi.png')] bg-top bg-cover lg:bg-cover w-full min-h-svh flex"
+        className="relative bg-[url('/arafi.png')] bg-top bg-cover lg:bg-cover w-full min-h-svh flex"
       >
-        <div className="text-white tracking-tight text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+
+        <div className="relative z-10 text-white tracking-tight text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
@@ -66,7 +68,7 @@ export default function Home() {
 
       {/* -----------------------------===================================== */}
 
-      <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-12 lg:py-20">
+      <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-12 lg:py-20 ">
         <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
           Combining <span className="text-white">logic</span> and{" "}
           <span className="text-white">design</span> to create engaging digital
@@ -79,13 +81,13 @@ export default function Home() {
             collaborating on meaningful digital experiences.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex-1/2">
-            <img src="" alt="" />
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="flex-1/2 mt-15">
+            <img src="Dirga-Moss.png" alt="D" className="bg-cover self-center"/>
           </div>
           <div className="flex-1/2 lg:mr-12 mt-15 tracking-tight">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-white"></div>
+              <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
               <div className="font-[IBM] uppercase">Experience</div>
             </div>
             <div className="mt-8">
@@ -127,20 +129,7 @@ export default function Home() {
 
       {/* ========================================================================= */}
 
-      <div className="h-dvh bg-black lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="flex-1/2">
-            <img src="scholarium.webp" className="w-full  object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
-          </div>
-          <div className="flex-1/2">
-          <img src="arte.webp" className="w-full object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
-          </div>
-          <div className="flex-1/2">
-          <img src="arte.webp" className="w-full object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
-          </div>
-
-        </div>
-      </div>
+     
 
       {/* <div className="h-[200px]"></div> */}
     </>
