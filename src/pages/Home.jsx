@@ -64,6 +64,8 @@ export default function Home() {
         </div>
       </div>
 
+      {/* -----------------------------===================================== */}
+
       <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-12 lg:py-20">
         <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
           Combining <span className="text-white">logic</span> and{" "}
@@ -71,7 +73,7 @@ export default function Home() {
           experiences.
         </h3>
         <div className="flex lg:justify-end mt-8 lg:mt-12 lg:pr-12">
-          <p className="w-full lg:w-1/2 lg:text-justify">
+          <p className="w-full lg:w-1/2 lg:text-justify font-light">
             Final-year student passionate about frontend development. I’ve built
             several projects focused on clean, user-friendly interfaces and love
             collaborating on meaningful digital experiences.
@@ -81,7 +83,7 @@ export default function Home() {
           <div className="flex-1/2">
             <img src="" alt="" />
           </div>
-          <div className="flex-1/2 lg:mr-12 mt-15">
+          <div className="flex-1/2 lg:mr-12 mt-15 tracking-tight">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-white"></div>
               <div className="font-[IBM] uppercase">Experience</div>
@@ -100,7 +102,7 @@ export default function Home() {
             <div className="mt-6">
               <div className="font-light text-white/50">[ 02 ]</div>
               <div className="text-3xl uppercase text-white mt-3">
-                Frontend Developer
+                Frontend & UI Designer
               </div>
               <div className="flex justify-between font-light text-[14px]">
                 <div className="mt-3">DEVART</div>
@@ -120,6 +122,23 @@ export default function Home() {
             </div>
             <hr className="mt-4 text-white/10" />
           </div>
+        </div>
+      </div>
+
+      {/* ========================================================================= */}
+
+      <div className="h-dvh bg-black lg:px-8">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex-1/2">
+            <img src="scholarium.webp" className="w-full  object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
+          </div>
+          <div className="flex-1/2">
+          <img src="arte.webp" className="w-full object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
+          </div>
+          <div className="flex-1/2">
+          <img src="arte.webp" className="w-full object-cover object-center lg:rounded-sm  h-[250px] lg:h-[600px]" />
+          </div>
+
         </div>
       </div>
 
