@@ -42,7 +42,7 @@ export default function Home() {
         style={{ backgroundPosition }}
         className="bg-[url('/arafi.png')] bg-top bg-cover lg:bg-cover w-full min-h-svh flex"
       >
-        <div className="text-white text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+        <div className="text-white tracking-tight text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
@@ -61,6 +61,21 @@ export default function Home() {
               Frontend & Designer
             </motion.div>
           </div>
+        </div>
+      </div>
+
+      <div className="h-dvh bg-black text-[#e0e0e0] px-3 lg:px-8 py-12 lg:py-20">
+        <h3 className="text-4xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
+          Combining <span className="text-white">logic</span> and{" "}
+          <span className="text-white">design</span> to create engaging digital
+          experiences.
+        </h3>
+        <div className="flex lg:justify-end mt-8 lg:mt-12 lg:pr-12">
+          <p className="w-full lg:w-1/2 text-justify">
+            Final-year student passionate about frontend development. I’ve built
+            several projects focused on clean, user-friendly interfaces and love
+            collaborating on meaningful digital experiences.
+          </p>
         </div>
       </div>
     </>
