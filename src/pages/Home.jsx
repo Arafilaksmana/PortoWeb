@@ -64,8 +64,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-dvh bg-black text-[#e0e0e0] px-3 lg:px-8 py-12 lg:py-20">
-        <h3 className="text-4xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
+      <div className="h-dvh bg-black text-[#e0e0e0] px-5 lg:px-8 py-12 lg:py-20">
+        <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
           Combining <span className="text-white">logic</span> and{" "}
           <span className="text-white">design</span> to create engaging digital
           experiences.
