@@ -64,14 +64,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="h-dvh bg-black text-[#e0e0e0] pl-3 pr-8  lg:px-8 py-12 lg:py-20">
+      <div className="h-dvh bg-black text-[#e0e0e0] px-4 lg:px-8 py-12 lg:py-20">
         <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
           Combining <span className="text-white">logic</span> and{" "}
           <span className="text-white">design</span> to create engaging digital
           experiences.
         </h3>
         <div className="flex lg:justify-end mt-8 lg:mt-12 lg:pr-12">
-          <p className="w-full lg:w-1/2 text-justify">
+          <p className="w-full lg:w-1/2 lg:text-justify">
             Final-year student passionate about frontend development. I’ve built
             several projects focused on clean, user-friendly interfaces and love
             collaborating on meaningful digital experiences.
