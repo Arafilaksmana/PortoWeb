@@ -21,15 +21,15 @@ export default function ProjectDisplay({ project }) {
         <div className="flex flex-col lg:flex-row gap-3 mt-4">
           <div className="flex flex-col gap-2 flex-1/3 h-fi">
             <div className="bg-white/7 rounded-lg px-4 py-2">
-              <h3 className="text-2xl">{project.title}</h3>
+              <h3 className="text-2xl tracking-tight">{project.title}</h3>
             </div>
             <div className="bg-white/7 rounded-lg px-4 py-2 flex items-center gap-4">
-              <h4 className="text-[18px]">Technology:</h4>
+              <h4 className="text-[18px] tracking-tight">Technology:</h4>
               <div className="flex gap-4">{project.technologies}</div>
             </div>
           </div>
           <div className="flex-1/3 bg-white/7 rounded-lg px-4 py-2">
-            <h4 className="text-[18px]">Description</h4>
+            <h4 className="text-[18px] tracking-tight">Description</h4>
             <p className="font-light mt-4 pb-4">{project.description}</p>
           </div>
         </div>
