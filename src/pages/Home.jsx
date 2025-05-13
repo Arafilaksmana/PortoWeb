@@ -83,7 +83,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row items-center">
           <div className="flex-1/2 mt-15">
-            <img src="Dirga-Moss.png" alt="D" className="bg-cover self-center"/>
+            <img
+              src="Dirga-Moss.png"
+              alt="D"
+              className="bg-cover self-center"
+            />
           </div>
           <div className="flex-1/2 lg:mr-12 mt-15 tracking-tight">
             <div className="flex items-center gap-2">
@@ -130,7 +134,19 @@ export default function Home() {
       {/* ========================================================================= */}
 
       <div className="bg-black text-[#e0e0e0] py-20">
-          <h3 className="text-center text-3xl">Explore my selected <span className="text-white">work</span></h3>
+        <h3 className="text-center text-5xl">
+          Explore my selected <span className="text-white">work</span>
+        </h3>
+        <div className="flex justify-center mt-12">
+          <div className=" bg-[#171b1b] rounded-xl">
+            <button className="text-[16px] tracking-tight text-center w-[80px]  rounded-xl box-content px-4 py-2  bg-[#f4f4f5] text-black cursor-pointer">
+              Scholarium
+            </button>
+            <button className="text-[16px] tracking-tight text-center w-[80px]  rounded-xl box-content px-4 py-2 cursor-pointer">
+              Arte
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
