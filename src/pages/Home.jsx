@@ -137,6 +137,8 @@ export default function Home() {
         <h3 className="text-center text-5xl">
           Explore my selected <span className="text-white">work</span>
         </h3>
+
+        {/* TOGGLE SWITCH */}
         <div className="flex justify-center mt-12">
           <div className=" bg-[#171b1b] rounded-xl">
             <button className="text-[16px] tracking-tight text-center w-[80px]  rounded-xl box-content px-4 py-2  bg-[#f4f4f5] text-black cursor-pointer">
@@ -145,6 +147,38 @@ export default function Home() {
             <button className="text-[16px] tracking-tight text-center w-[80px]  rounded-xl box-content px-4 py-2 cursor-pointer">
               Arte
             </button>
+          </div>
+        </div>
+
+        {/* SHOWING CONTENT */}
+        <div className="mt-8 px-8">
+          <div className="w-full h-[600px]">
+            <img
+              src="/scholarium.webp"
+              alt=""
+              className="w-full h-full object-cover object-center rounded-xl"
+            ></img>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-3 mt-4">
+            <div className="flex-1/3 h-fit bg-white/7 rounded-lg px-4 py-2">
+              <h3 className="text-2xl">
+                Scholarium - Global Learning Excellence Journey
+              </h3>
+            </div>
+            <div className="flex-1/3 bg-white/7 rounded-lg px-4 py-2 ">
+              <h4 className="text-[18px]">Description</h4>
+              <p className="font-light mt-4 pb-4">
+                This project was created as an educational platform for students
+                who are looking for scholarships from various educational
+                institutions around the world. Here, they can browse and apply
+                for a wide range of scholarships offered by different
+                institutions.
+              </p>
+            </div>
+            <div className="flex-1/3 bg-white/7 rounded-lg px-4 py-2 ">
+              <h4 className="text-[18px]">Technology</h4>
+              <p className="font-light"></p>
+            </div>
           </div>
         </div>
       </div>
