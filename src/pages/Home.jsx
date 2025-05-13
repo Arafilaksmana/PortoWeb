@@ -151,7 +151,7 @@ export default function Home() {
         </div>
 
         {/* SHOWING CONTENT */}
-        <div className="mt-8 px-8">
+        <div className="mt-8 px-4 lg:px-8">
           <div className="w-full h-[600px]">
             <img
               src="/scholarium.webp"
