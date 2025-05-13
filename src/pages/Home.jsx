@@ -129,9 +129,9 @@ export default function Home() {
 
       {/* ========================================================================= */}
 
-     
-
-      {/* <div className="h-[200px]"></div> */}
+      <div className="bg-black text-[#e0e0e0] py-20">
+          <h3 className="text-center text-3xl">Explore my selected <span className="text-white">work</span></h3>
+      </div>
     </>
   );
 }
