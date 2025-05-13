@@ -141,7 +141,7 @@ export default function Home() {
 
       {/* ========================================================================= */}
 
-      <div className="bg-black text-[#e0e0e0] py-20">
+      <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-20">
         <h3 className="text-center text-5xl">
           Explore my selected <span className="text-white">work</span>
         </h3>

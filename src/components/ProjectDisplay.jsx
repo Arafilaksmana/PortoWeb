@@ -8,9 +8,9 @@ export default function ProjectDisplay({ project }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="mt-8 px-4 lg:px-8"
+      className="mt-8"
     >
-      <div className="mt-8 px-4 lg:px-8">
+      <div className="mt-8">
         <div className="w-full h-[600px]">
           <img
             src={project.image}
