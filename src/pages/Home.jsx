@@ -145,20 +145,23 @@ export default function Home() {
 
         <div className="mt-8 lg:mt-10">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-6">
-            <div
-              className="relative w-full lg:w-1/2"
-              onMouseEnter={() => setHoveredProject("arte")}
-              onMouseLeave={() => setHoveredProject(null)}
-            >
-              <img src="/arte.webp" alt="" className="w-full rounded-lg" />
-              <ProjectsOverlay show={hoveredProject === "arte"} />
+            <div className="w-full lg:w-1/2">
+              <div
+                className="relative"
+                onMouseEnter={() => setHoveredProject("arte")}
+                onMouseLeave={() => setHoveredProject(null)}
+              >
+                <img src="/arte.webp" alt="" className="w-full rounded-lg" />
+                <ProjectsOverlay show={hoveredProject === "arte"} />
+              </div>
               <h4 className="mt-6 text-xl lg:text-2xl tracking-tight">
                 Arte - Edu Art Platform
               </h4>
             </div>
 
+            <div className="w-full lg:w-1/2">
             <div
-              className="relative w-full lg:w-1/2"
+              className="relative"
               onMouseEnter={() => setHoveredProject("scholarium")}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -167,17 +170,18 @@ export default function Home() {
                 alt=""
                 className="w-full rounded-lg"
               />
-              <ProjectsOverlay show={hoveredProject === 'scholarium'} />
-              <div className="flex items-center justify-between mt-6">
-                <h4 className="text-xl lg;text-2xl tracking-tigh">
-                  Scholarium
-                </h4>
-                <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
-                  1 AWARD
-                </div>
+              <ProjectsOverlay show={hoveredProject === "scholarium"} />
+            </div>
+            <div className="flex items-center justify-between mt-6">
+              <h4 className="text-xl lg:text-2xl tracking-tight">Scholarium</h4>
+              <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
+                1 AWARD
               </div>
             </div>
           </div>
+          </div>
+
+  
         </div>
       </div>
     </>
