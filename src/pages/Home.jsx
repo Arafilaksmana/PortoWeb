@@ -1,15 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import EntryOverlay from "../components/EntryOverlay.jsx";
-import ProjectToggle from "../components/ProjectToggle.jsx";
-import ProjectDisplay from "../components/ProjectDisplay.jsx";
-import { projects } from "../components/Projects.jsx";
+import ProjectsOverlay from "../components/ProjectsOverlay.jsx";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [showOverlay, setShowOverlay] = useState(true);
   const [overlayExited, setOverlayExited] = useState(false);
-  const [currentProjectKey, setCurrentProjectKey] = useState("scholarium");
+  const [hoveredProject, setHoveredProject] = useState(null);
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -34,10 +32,6 @@ export default function Home() {
   };
 
   const backgroundPosition = `center ${scrollY * 0.1}px`;
-
-  const handleProjectChange = (key) => {
-    setCurrentProjectKey(key);
-  };
 
   return (
     <>
@@ -151,16 +145,33 @@ export default function Home() {
 
         <div className="mt-8 lg:mt-10">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-6">
-            <div className="w-full lg:w-1/2">
+            <div
+              className="relative w-full lg:w-1/2"
+              onMouseEnter={() => setHoveredProject("arte")}
+              onMouseLeave={() => setHoveredProject(null)}
+            >
               <img src="/arte.webp" alt="" className="w-full rounded-lg" />
+              <ProjectsOverlay show={hoveredProject === "arte"} />
               <h4 className="mt-6 text-xl lg:text-2xl tracking-tight">
                 Arte - Edu Art Platform
               </h4>
             </div>
-            <div className="w-full lg:w-1/2">
-              <img src="/scholarium.webp" alt="" className="w-full rounded-lg" />
+
+            <div
+              className="relative w-full lg:w-1/2"
+              onMouseEnter={() => setHoveredProject("scholarium")}
+              onMouseLeave={() => setHoveredProject(null)}
+            >
+              <img
+                src="/scholarium.webp"
+                alt=""
+                className="w-full rounded-lg"
+              />
+              <ProjectsOverlay show={hoveredProject === 'scholarium'} />
               <div className="flex items-center justify-between mt-6">
-                <h4 className="text-xl lg;text-2xl tracking-tigh">Scholarium</h4>
+                <h4 className="text-xl lg;text-2xl tracking-tigh">
+                  Scholarium
+                </h4>
                 <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
                   1 AWARD
                 </div>
