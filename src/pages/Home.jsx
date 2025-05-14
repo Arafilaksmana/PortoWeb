@@ -160,7 +160,7 @@ export default function Home() {
             <div className="w-full lg:w-1/2">
               <img src="/scholarium.webp" alt="" className="w-full rounded-lg" />
               <div className="flex items-center justify-between mt-6">
-                <h4 className="text-2xl tracking-tigh">Scholarium</h4>
+                <h4 className="text-xl lg;text-2xl tracking-tigh">Scholarium</h4>
                 <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
                   1 AWARD
                 </div>
