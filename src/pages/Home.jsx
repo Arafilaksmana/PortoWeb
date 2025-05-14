@@ -52,7 +52,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
-        <div className="relative z-10 text-white tracking-tight text-3xl ml-3 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+        <div className="relative z-10 text-white tracking-tight text-3xl ml-4 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
@@ -142,16 +142,32 @@ export default function Home() {
       {/* ========================================================================= */}
 
       <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-20">
-        <h3 className="text-center text-5xl tracking-tight">
-          Explore my selected <span className="text-white">work</span>
-        </h3>
+        <div className="flex gap-2 items-center">
+          <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
+          <h3 className="font-[IBM] uppercase tracking-tight">
+            Selected <span className="text-white">work</span>
+          </h3>
+        </div>
 
-        {/* TOGGLE SWITCH */}
-        <ProjectToggle
-          currentProjectKey={currentProjectKey}
-          onProjectChange={handleProjectChange}
-        />
-        <ProjectDisplay project={projects[currentProjectKey]} />
+        <div className="mt-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-6">
+            <div className="w-full lg:w-1/2">
+              <img src="/arte.webp" alt="" className="w-full rounded-lg" />
+              <h4 className="mt-6 text-xl lg:text-2xl tracking-tight">
+                Arte - Edu Art Platform
+              </h4>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <img src="/scholarium.webp" alt="" className="w-full rounded-lg" />
+              <div className="flex items-center justify-between mt-6">
+                <h4 className="text-2xl tracking-tigh">Scholarium</h4>
+                <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
+                  1 AWARD
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

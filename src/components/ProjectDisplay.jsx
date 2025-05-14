@@ -10,7 +10,7 @@ export default function ProjectDisplay({ project }) {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="mt-8"
     >
-      <div className="mt-8">
+      <div className="mt-8 flex">
         <div className="w-full h-[600px]">
           <img
             src={project.image}
@@ -18,7 +18,7 @@ export default function ProjectDisplay({ project }) {
             className="w-full h-full object-cover object-center rounded-xl"
           />
         </div>
-        <div className="flex flex-col lg:flex-row gap-3 mt-4">
+        <div className="flex flex-col gap-3">
           <div className="flex flex-col gap-2 flex-1/3 h-fi">
             <div className="bg-white/7 rounded-lg px-4 py-2">
               <h3 className="text-2xl tracking-tight">{project.title}</h3>
