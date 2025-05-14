@@ -102,7 +102,7 @@ export default function Home() {
               <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
               <div className="font-[IBM] uppercase">Experience</div>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 lg:mt-10">
               <div className="font-light text-white/50">[ 01 ]</div>
               <div className="text-3xl uppercase text-white mt-3">
                 Programming Instructor
@@ -149,7 +149,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-8 lg:mt-10">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-6">
             <div className="w-full lg:w-1/2">
               <img src="/arte.webp" alt="" className="w-full rounded-lg" />
