@@ -9,9 +9,9 @@ const ProjectsOverlay = ({ show }) => {
       }`}
     >
       <div
-        className={`flex gap-2 bg-[#1a1a1a] backdrop-filter backdrop-blur-md px-4 py-3 rounded-md items-center justify-center `}
+        className={`flex gap-1 bg-[#1a1a1a] backdrop-filter backdrop-blur-md px-4 py-3 rounded-md items-c justify-center `}
       >
-        <span className="text-white text-sm font-light">View Project</span>
+        <span className="text-white text-sm">View Project</span>
         <MdArrowOutward className="text-white"/> {/* Adjust size as needed */}
       </div>
     </div>

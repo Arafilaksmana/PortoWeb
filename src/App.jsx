@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home.jsx";
+import Footer from "./components/Footer.jsx";
 import { useEffect } from 'react'
 import Lenis from '@studio-freight/lenis'
 
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

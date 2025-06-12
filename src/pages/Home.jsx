@@ -139,7 +139,7 @@ export default function Home() {
         <div className="flex gap-2 items-center">
           <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
           <h3 className="font-[IBM] uppercase tracking-tight">
-            Selected <span className="text-white">work</span>
+            Selected work
           </h3>
         </div>
 

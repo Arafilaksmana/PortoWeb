@@ -8,7 +8,7 @@ function Navbar() {
         <div>
           <div className="flex items-center gap-1 px-3 py-0.5 bg-gray-400/10 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 rounded-sm">
             <MdOutlineSubdirectoryArrowRight />
-            <a href="" className="font-light">Lets Talk</a>
+            <a href="" className="font-light">Let's Talk</a>
           </div>
         </div>
       </div>
