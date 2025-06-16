@@ -70,11 +70,9 @@ export default function Home() {
 
       {/* -----------------------------===================================== */}
 
-      <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-12 lg:py-20 ">
+      <div className="bg-black text-white px-4 lg:px-8 py-12 lg:py-20 ">
         <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
-          Combining <span className="text-white">logic</span> and{" "}
-          <span className="text-white">design</span> to create engaging digital
-          experiences.
+          Combining logic and design to create engaging digital experiences.
         </h3>
         <div className="flex lg:justify-end mt-8 lg:mt-12 lg:pr-12">
           <p className="w-full lg:w-1/2 lg:text-justify font-light">
@@ -93,7 +91,7 @@ export default function Home() {
           </div>
           <div className="flex-1/2 lg:mr-12 mt-15 tracking-tight">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
+              <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
               <div className="font-[IBM] uppercase">Experience</div>
             </div>
             <div className="mt-8 lg:mt-10">
@@ -137,10 +135,8 @@ export default function Home() {
 
       <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-20">
         <div className="flex gap-2 items-center">
-          <div className="w-2 h-2 rounded-full bg-emerald-600"></div>
-          <h3 className="font-[IBM] uppercase tracking-tight">
-            Selected work
-          </h3>
+          <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+          <h3 className="font-[IBM] uppercase tracking-tight">Selected work</h3>
         </div>
 
         <div className="mt-8 lg:mt-10">
@@ -160,28 +156,28 @@ export default function Home() {
             </div>
 
             <div className="w-full lg:w-1/2">
-            <div
-              className="relative"
-              onMouseEnter={() => setHoveredProject("scholarium")}
-              onMouseLeave={() => setHoveredProject(null)}
-            >
-              <img
-                src="/scholarium.webp"
-                alt=""
-                className="w-full rounded-lg"
-              />
-              <ProjectsOverlay show={hoveredProject === "scholarium"} />
-            </div>
-            <div className="flex items-center justify-between mt-6">
-              <h4 className="text-xl lg:text-2xl tracking-tight">Scholarium</h4>
-              <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
-                1 AWARD
+              <div
+                className="relative"
+                onMouseEnter={() => setHoveredProject("scholarium")}
+                onMouseLeave={() => setHoveredProject(null)}
+              >
+                <img
+                  src="/scholarium.webp"
+                  alt=""
+                  className="w-full rounded-lg"
+                />
+                <ProjectsOverlay show={hoveredProject === "scholarium"} />
+              </div>
+              <div className="flex items-center justify-between mt-6">
+                <h4 className="text-xl lg:text-2xl tracking-tight">
+                  Scholarium
+                </h4>
+                <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
+                  1 AWARD
+                </div>
               </div>
             </div>
           </div>
-          </div>
-
-  
         </div>
       </div>
     </>
