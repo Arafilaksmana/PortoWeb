@@ -2,7 +2,7 @@ import { MdContentCopy } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="pt-24 pb-6 px-4 lg:px-8 bg-black text-white">
+    <div className="lg:pt-24 pt-20 pb-6 px-4 lg:px-8 bg-black text-white">
       <div className="w-fit mx-auto text-center">
         <h2 className="text-4xl lg:text-5xl tracking-tight lg:w-[500px] leading-12 lg:leading-14">
           Let's Discuss Your Projects With Me
@@ -18,9 +18,9 @@ export default function Footer() {
       <div className="mt-12 mb-2 flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between font-[IBM] uppercase text-[12px]">
         <span>©2025 ARLAKS</span>
         <div className="flex gap-4">
-          <a href="">Instagram,</a>
-          <a href="">LinkedIn,</a>
-          <a href="">Github</a>
+          <a href="" className="underline">Instagram,</a>
+          <a href="" className="underline">LinkedIn,</a>
+          <a href="" className="underline">Github</a>
         </div>
       </div>
     </div>

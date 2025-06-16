@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 const projects = [
   {
     id: "scholarium",
-    title: "Scholarship around the world",
+    title: "Global Learning",
     description:
-      "Platform yang membantu siswa menemukan beasiswa global dengan pengalaman pengguna yang intuitif.",
+      "We provide a comprehensive platform that helps students discover and access a wide range of global scholarship opportunities. Users can search for available scholarships and apply directly to the organizers, or take advantage of exclusive scholarship offers through our platform.",
     image: "/scholarium.webp",
   },
   {
     id: "arte",
-    title: "Arte – Creative Portfolio",
+    title: "One Stop Edu Art Platform",
     description:
-      "Sebuah platform untuk menampilkan portofolio seni dan desain, menekankan visual dan minimalisme.",
+      "rte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
     image: "/arte.webp",
   },
 ];
@@ -24,7 +24,7 @@ export default function SelectedProjects() {
   return (
     <div className="bg-black text-white px-4 lg:px-26 py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
       <div className="w-full lg:w-1/2">
-        <h2 className="text-5xl">Selected Projects</h2>
+        <h2 className="lg:text-5xl text-4xl">Selected Projects</h2>
 
         {/* Buttons */}
         <div className="mt-8 py-2 px-2 w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-md flex gap-2">
@@ -45,7 +45,7 @@ export default function SelectedProjects() {
         </div>
 
         {/* Project Detail */}
-        <div className="mt-6 lg:mt-50 w-full min-h-[140px] lg:w-[400px]">
+        <div className="mt-20 lg:mt-50 w-full min-h-[200px] lg:w-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeProject.id}
@@ -64,7 +64,7 @@ export default function SelectedProjects() {
 
         <a
           href="#"
-          className="mt-8 block bg-white w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
+          className="mt-6 block bg-white w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
         >
           View All Projects
         </a>
