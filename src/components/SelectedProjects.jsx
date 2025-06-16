@@ -27,15 +27,15 @@ export default function SelectedProjects() {
         <h2 className="lg:text-5xl text-4xl">Selected Projects</h2>
 
         {/* Buttons */}
-        <div className="mt-8 py-2 px-2 w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-md flex gap-2">
+        <div className="mt-8 py-2 px-2  w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-md flex gap-2">
           {projects.map((project) => (
             <button
               key={project.id}
               onClick={() => setActiveProject(project)}
-              className={`text-[16px] w-full lg:w-[110px] text-center px-2 py-2 rounded-sm transition-all duration-200 ease-in-out
+              className={`text-[16px] w-full lg:w-fit text-center px-6 py-2 rounded-sm transition-all duration-200 ease-in-out
               ${
                 activeProject.id === project.id
-                  ? "bg-white text-black pointer-events-none"
+                  ? "bg-white/95 text-black pointer-events-none"
                   : "text-white hover:bg-white/5"
               }`}
             >
@@ -64,7 +64,7 @@ export default function SelectedProjects() {
 
         <a
           href="#"
-          className="mt-6 block bg-white w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
+          className="mt-6 block bg-white/95 w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
         >
           View All Projects
         </a>

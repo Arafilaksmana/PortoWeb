@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex justify-center mt-8">
           <button
             onClick={handleCopy}
-            className="px-4 py-3 bg-white rounded-sm flex items-center gap-2 group transition-all duration-200"
+            className="px-4 py-3 bg-white/95 rounded-sm flex items-center gap-2 group transition-all duration-200"
           >
             <div className="text-sm text-black">
               {copied ? "Copied!" : email}
