@@ -2,7 +2,7 @@ import { MdContentCopy } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="lg:pt-24 pt-20 pb-6 px-4 lg:px-8 bg-black text-white">
+    <div className="pt-15  pb-6 px-4 lg:px-8 bg-black text-white">
       <div className="w-fit mx-auto text-center">
         <h2 className="text-4xl lg:text-5xl tracking-tight lg:w-[500px] leading-12 lg:leading-14">
           Let's Discuss Your Projects With Me

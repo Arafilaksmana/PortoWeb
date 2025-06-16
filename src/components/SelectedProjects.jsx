@@ -71,7 +71,7 @@ export default function SelectedProjects() {
       </div>
 
       {/* Project Image */}
-      <div className="lg:absolute lg:right-[-100px] top-12">
+      <div className="lg:absolute lg:right-[-100px] lg:top-12">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeProject.id}
