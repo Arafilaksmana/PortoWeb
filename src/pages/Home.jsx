@@ -1,13 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import EntryOverlay from "../components/EntryOverlay.jsx";
-import ProjectsOverlay from "../components/ProjectsOverlay.jsx";
+import SelectedProjects from "../components/SelectedProjects";
+
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [showOverlay, setShowOverlay] = useState(true);
   const [overlayExited, setOverlayExited] = useState(false);
-  const [hoveredProject, setHoveredProject] = useState(null);
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -132,54 +132,9 @@ export default function Home() {
       </div>
 
       {/* ========================================================================= */}
+      <SelectedProjects />
 
-      <div className="bg-black text-[#e0e0e0] px-4 lg:px-8 py-20">
-        <div className="flex gap-2 items-center">
-          <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-          <h3 className="font-[IBM] uppercase tracking-tight">Selected work</h3>
-        </div>
-
-        <div className="mt-8 lg:mt-10">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-6">
-            <div className="w-full lg:w-1/2">
-              <div
-                className="relative"
-                onMouseEnter={() => setHoveredProject("arte")}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
-                <img src="/arte.webp" alt="" className="w-full rounded-lg" />
-                <ProjectsOverlay show={hoveredProject === "arte"} />
-              </div>
-              <h4 className="mt-6 text-xl lg:text-2xl tracking-tight">
-                Arte - Edu Art Platform
-              </h4>
-            </div>
-
-            <div className="w-full lg:w-1/2">
-              <div
-                className="relative"
-                onMouseEnter={() => setHoveredProject("scholarium")}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
-                <img
-                  src="/scholarium.webp"
-                  alt=""
-                  className="w-full rounded-lg"
-                />
-                <ProjectsOverlay show={hoveredProject === "scholarium"} />
-              </div>
-              <div className="flex items-center justify-between mt-6">
-                <h4 className="text-xl lg:text-2xl tracking-tight">
-                  Scholarium
-                </h4>
-                <div className="text-white outline outline-white/20 px-2 py-2 rounded-md text-[10px] font-[IBM]">
-                  1 AWARD
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </>
   );
 }

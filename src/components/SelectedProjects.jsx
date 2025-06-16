@@ -1,0 +1,94 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const projects = [
+  {
+    id: "scholarium",
+    title: "Scholarship around the world",
+    description:
+      "Platform yang membantu siswa menemukan beasiswa global dengan pengalaman pengguna yang intuitif.",
+    image: "/scholarium.webp",
+  },
+  {
+    id: "arte",
+    title: "Arte – Creative Portfolio",
+    description:
+      "Sebuah platform untuk menampilkan portofolio seni dan desain, menekankan visual dan minimalisme.",
+    image: "/arte.webp",
+  },
+];
+
+export default function SelectedProjects() {
+  const [activeProject, setActiveProject] = useState(projects[0]);
+
+  return (
+    <div className="bg-black text-white px-4 lg:px-26 py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
+      <div className="w-full lg:w-1/2">
+        <h2 className="text-5xl">Selected Projects</h2>
+
+        {/* Buttons */}
+        <div className="mt-8 py-2 px-2 w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-md flex gap-2">
+          {projects.map((project) => (
+            <button
+              key={project.id}
+              onClick={() => setActiveProject(project)}
+              className={`text-[16px] w-full lg:w-[110px] text-center px-2 py-2 rounded-sm transition-all duration-200 ease-in-out
+              ${
+                activeProject.id === project.id
+                  ? "bg-white text-black pointer-events-none"
+                  : "text-white hover:bg-white/5"
+              }`}
+            >
+              {project.id.charAt(0).toUpperCase() + project.id.slice(1)}
+            </button>
+          ))}
+        </div>
+
+        {/* Project Detail */}
+        <div className="mt-6 lg:mt-50 w-full lg:w-[400px]">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeProject.id}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <h3 className="text-3xl tracking-tight">{activeProject.title}</h3>
+              <p className="mt-6 text-[#e0e0e0] text-sm">
+                {activeProject.description}
+              </p>
+            </motion.div>
+          </AnimatePresence>
+        </div>
+
+        <a
+          href="#"
+          className="mt-8 block bg-white w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
+        >
+          View All Projects
+        </a>
+      </div>
+
+      {/* Project Image */}
+      <div className="lg:absolute lg:right-[-100px] top-12">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeProject.id}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 60 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="p-2 border border-white/20 rounded-md w-full lg:w-[800px]"
+          >
+            <img
+              src={activeProject.image}
+              alt={activeProject.title}
+              className="rounded-sm w-full h-full object-cover"
+            />
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </div>
+  );
+}
