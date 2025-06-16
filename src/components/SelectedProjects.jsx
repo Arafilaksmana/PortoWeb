@@ -45,7 +45,7 @@ export default function SelectedProjects() {
         </div>
 
         {/* Project Detail */}
-        <div className="mt-6 lg:mt-50 w-full lg:w-[400px]">
+        <div className="mt-6 lg:mt-50 w-full min-h-[140px] lg:w-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeProject.id}
