@@ -28,7 +28,7 @@ export default function SelectedProjects() {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   return (
-    <div className="bg-black text-white px-8 lg:px-26 py-12 lg:py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
+    <div className="bg-black text-white px-4 lg:px-26 py-12 lg:py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
       <div className="w-full lg:w-1/2">
         <h2 className="lg:text-5xl text-4xl">Explore my selected projects</h2>
 
