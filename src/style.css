@@ -28,11 +28,11 @@
   src: url("./assets/fonts/inter_light.ttf");
 }
 @font-face {
-  font-family: "IBM";
+  font-family: "Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("./assets/fonts/IBMPlexSans-Regular.ttf");
+  src: url("./assets/fonts/SpaceMono-Regular.ttf");
 }
 
 body{

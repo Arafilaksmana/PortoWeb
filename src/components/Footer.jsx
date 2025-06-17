@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-12 mb-2 flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between font-[IBM] uppercase text-[12px]">
+      <div className="mt-12 mb-2 flex flex-col lg:flex-row gap-3 lg:gap-0 items-center justify-between font-[Mono] uppercase text-[12px]">
         <span>©2025 ARLAKS</span>
         <div className="flex gap-4">
           <a href="https://www.instagram.com/arlaks" className="underline">Instagram,</a>

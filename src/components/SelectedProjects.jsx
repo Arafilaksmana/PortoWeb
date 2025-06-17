@@ -16,23 +16,29 @@ const projects = [
       "rte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
     image: "/arte.webp",
   },
+  {
+    id:"tikom",
+    title:"IT Course",
+    description:"",
+    image:"",
+  }
 ];
 
 export default function SelectedProjects() {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   return (
-    <div className="bg-black text-white px-4 lg:px-26 py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
+    <div className="bg-black text-white px-8 lg:px-26 py-12 lg:py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
       <div className="w-full lg:w-1/2">
-        <h2 className="lg:text-5xl text-4xl">Selected Projects</h2>
+        <h2 className="lg:text-5xl text-4xl">Explore my selected projects</h2>
 
         {/* Buttons */}
-        <div className="mt-8 py-2 px-2  w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-md flex gap-2">
+        <div className="mt-8 py-2 px-2  w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-lg flex">
           {projects.map((project) => (
             <button
               key={project.id}
               onClick={() => setActiveProject(project)}
-              className={`text-[16px] w-full lg:w-fit text-center px-6 py-2 rounded-sm transition-all duration-200 ease-in-out
+              className={`text-[16px] font-[Mono]  w-full lg:w-fit text-center px-6 py-2 rounded-sm transition-all duration-200 ease-in-out
               ${
                 activeProject.id === project.id
                   ? "bg-white/95 text-black pointer-events-none"
@@ -54,7 +60,7 @@ export default function SelectedProjects() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <h3 className="text-3xl tracking-tight">{activeProject.title}</h3>
+              <h3 className="text-2xl tracking-tight">{activeProject.title}</h3>
               <p className="mt-6 text-[#e0e0e0] text-sm">
                 {activeProject.description}
               </p>

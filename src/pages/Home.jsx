@@ -92,7 +92,7 @@ export default function Home() {
           <div className="flex-1/2 lg:mr-12 mt-15 tracking-tight">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-              <div className="font-[IBM] uppercase">Experience</div>
+              <div className="font-[Mono] uppercase">Experience</div>
             </div>
             <div className="mt-8 lg:mt-10">
               <div className="font-light text-white/50">[ 01 ]</div>
