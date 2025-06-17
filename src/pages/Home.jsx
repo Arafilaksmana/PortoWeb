@@ -46,7 +46,7 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
-        <div className="relative z-10 text-white tracking-tight text-3xl ml-4 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
+        <div className="relative z-10  text-white tracking-tight text-3xl ml-4 lg:ml-auto mr-auto lg:mr-[20%] lg:my-auto self-end pb-12 lg:pb-0">
           <div className="overflow-hidden">
             <motion.div
               initial={{ y: "100%", opacity: 0 }}
@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* -----------------------------===================================== */}
 
-      <div className="bg-black text-white px-4 lg:px-8 py-12 lg:py-20 ">
+      <div className="px-4 lg:px-8 py-12 lg:py-20 ">
         <h3 className="text-3xl lg:text-6xl w-full lg:w-3/4 tracking-tight">
           Combining logic and design to create engaging digital experiences.
         </h3>
@@ -95,38 +95,38 @@ export default function Home() {
               <div className="font-[Mono] uppercase">Experience</div>
             </div>
             <div className="mt-8 lg:mt-10">
-              <div className="font-light text-white/50">[ 01 ]</div>
-              <div className="text-3xl uppercase text-white mt-3">
+              <div className="font-[Mono]">[ 01 ]</div>
+              <div className="text-3xl uppercase  mt-3">
                 Programming Instructor
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">TIKOM</div>
-                <div className="mt-3">2024</div>
+                <div className="mt-3 font-[Mono]">Tikom</div>
+                <div className="mt-3 font-[Mono]">2024</div>
               </div>
             </div>
-            <hr className="mt-4 text-white/10" />
+            <hr className="mt-4 text-black/20 " />
             <div className="mt-6">
-              <div className="font-light text-white/50">[ 02 ]</div>
-              <div className="text-3xl uppercase text-white mt-3">
+              <div className="font-[Mono]">[ 02 ]</div>
+              <div className="text-3xl uppercase  mt-3">
                 Frontend & UI Designer
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">DEVART</div>
-                <div className="mt-3">2024</div>
+                <div className="mt-3 font-[Mono]">DEVART</div>
+                <div className="mt-3 font-[Mono]">2024</div>
               </div>
             </div>
-            <hr className="mt-4 text-white/10" />
+            <hr className="mt-4 text-black/20" />
             <div className="mt-6">
-              <div className="font-light text-white/50">[ 03 ]</div>
-              <div className="text-3xl uppercase text-white mt-3">
+              <div className="font-[Mono]">[ 03 ]</div>
+              <div className="text-3xl uppercase  mt-3">
                 Frontend Developer
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">SCHOLARIUM</div>
-                <div className="mt-3">2023</div>
+                <div className="mt-3 font-[Mono]">SCHOLARIUM</div>
+                <div className="mt-3 font-[Mono]">2023</div>
               </div>
             </div>
-            <hr className="mt-4 text-white/10" />
+            <hr className="mt-4 text-black/20" />
           </div>
         </div>
       </div>
