@@ -3,18 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const projects = [
   {
-    id: "scholarium",
-    title: "Global Learning",
-    description:
-      "We provide a comprehensive platform that helps students discover and access a wide range of global scholarship opportunities. Users can search for available scholarships and apply directly to the organizers, or take advantage of exclusive scholarship offers through our platform.",
-    image: "/scholarium.webp",
-  },
-  {
     id: "arte",
     title: "One Stop Edu Art Platform",
     description:
       "Arte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
     image: "/arte.webp",
+  },
+  {
+    id: "scholarium",
+    title: "Global Learning",
+    description:
+      "We provide a comprehensive platform that helps students discover and access a wide range of global scholarship opportunities. Users can search for available scholarships and apply directly to the organizers, or take advantage of exclusive scholarship offers through our platform.",
+    image: "/scholarium.webp",
   },
   {
     id:"tikom",
