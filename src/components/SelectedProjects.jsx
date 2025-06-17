@@ -9,7 +9,7 @@ const projects = [
       "Arte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
     image: "/arte.webp",
   },
-  {
+    {
     id: "scholarium",
     title: "Global Learning",
     description:
@@ -28,12 +28,12 @@ export default function SelectedProjects() {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   return (
-    <div className="px-4 lg:px-26 py-12 lg:py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
+    <div className="bg-black text-white px-4 lg:px-26 py-12 lg:py-20 relative flex flex-col lg:flex-row gap-6 overflow-hidden tracking-tight h-fit">
       <div className="w-full lg:w-1/2">
         <h2 className="lg:text-5xl text-4xl">Explore my selected projects</h2>
 
         {/* Buttons */}
-        <div className="mt-8 py-2 px-2  w-full lg:w-fit bg-[#f4f4f5] border-black/10 border rounded-lg  gap-1 flex">
+        <div className="mt-8 py-2 px-2  w-full lg:w-fit bg-[#efeeec0f] border-white/20 border rounded-lg flex">
           {projects.map((project) => (
             <button
               key={project.id}
@@ -41,8 +41,8 @@ export default function SelectedProjects() {
               className={`text-[16px] font-[Mono]  w-full lg:w-fit text-center px-6 py-2 rounded-sm transition-all duration-200 ease-in-out
               ${
                 activeProject.id === project.id
-                  ? "bg-[#EDEDEE] text-black pointer-events-none"
-                  : "text-black hover:bg-[#EDEDEE]"
+                  ? "bg-white/95 text-black pointer-events-none"
+                  : "text-white hover:bg-white/5"
               }`}
             >
               {project.id.charAt(0).toUpperCase() + project.id.slice(1)}
@@ -61,7 +61,7 @@ export default function SelectedProjects() {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <h3 className="text-2xl tracking-tight">{activeProject.title}</h3>
-              <p className="mt-6 text-sm text-justify">
+              <p className="mt-6 text-[#e0e0e0] text-sm text-justify">
                 {activeProject.description}
               </p>
             </motion.div>
@@ -70,7 +70,7 @@ export default function SelectedProjects() {
 
         <a
           href="#"
-          className="mt-6 block bg-[#EDEDEE] w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
+          className="mt-6 block bg-white/95 w-full text-center lg:w-fit text-black px-4 py-3 rounded-sm text-sm transition-transform duration-200 hover:scale-95"
         >
           View All Projects
         </a>
@@ -85,7 +85,7 @@ export default function SelectedProjects() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 60 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="p-2 border border-black/20 rounded-md w-full lg:w-[800px]"
+            className="p-2 border border-white/20 rounded-md w-full lg:w-[800px]"
           >
             <img
               src={activeProject.image}
