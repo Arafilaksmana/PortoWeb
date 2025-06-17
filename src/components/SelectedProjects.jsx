@@ -13,13 +13,13 @@ const projects = [
     id: "arte",
     title: "One Stop Edu Art Platform",
     description:
-      "rte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
+      "Arte is an innovative platform designed to break down barriers in public access to art, especially painting. Beyond its educational function, Arte also empowers emerging artists by providing a space to showcase and introduce their work to a broad audience. Our curated content includes interactive tutorials, expert insights, and virtual exhibitions, making art appreciation and creation more accessible than ever before.",
     image: "/arte.webp",
   },
   {
     id:"tikom",
     title:"IT Course",
-    description:"",
+    description:"Contoh deskripsi",
     image:"",
   }
 ];
@@ -51,7 +51,7 @@ export default function SelectedProjects() {
         </div>
 
         {/* Project Detail */}
-        <div className="mt-20 lg:mt-50 w-full min-h-[220px] lg:min-h-[200px ] lg:w-[400px]">
+        <div className="mt-20 lg:mt-20 w-full min-h-[220px] lg:min-h-[180px ] lg:w-[400px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeProject.id}
@@ -61,7 +61,7 @@ export default function SelectedProjects() {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <h3 className="text-2xl tracking-tight">{activeProject.title}</h3>
-              <p className="mt-6 text-[#e0e0e0] text-sm">
+              <p className="mt-6 text-[#e0e0e0] text-sm text-justify">
                 {activeProject.description}
               </p>
             </motion.div>
