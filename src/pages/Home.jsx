@@ -95,35 +95,35 @@ export default function Home() {
               <div className="font-[Mono] uppercase">Experience</div>
             </div>
             <div className="mt-8 lg:mt-10">
-              <div className="font-light text-white/50">[ 01 ]</div>
+              <div className="text-white/50 font-[Mono]">[ 01 ]</div>
               <div className="text-3xl uppercase text-white mt-3">
                 Programming Instructor
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">TIKOM</div>
-                <div className="mt-3">2024</div>
+                <div className="mt-3 font-[Mono]">TIKOM</div>
+                <div className="mt-3 font-[Mono]">2024</div>
               </div>
             </div>
             <hr className="mt-4 text-white/10" />
             <div className="mt-6">
-              <div className="font-light text-white/50">[ 02 ]</div>
+              <div className="font-[Mono] text-white/50">[ 02 ]</div>
               <div className="text-3xl uppercase text-white mt-3">
                 Frontend & UI Designer
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">DEVART</div>
-                <div className="mt-3">2024</div>
+                <div className="mt-3 font-[Mono]">DEVART</div>
+                <div className="mt-3 font-[Mono]">2024</div>
               </div>
             </div>
             <hr className="mt-4 text-white/10" />
             <div className="mt-6">
-              <div className="font-light text-white/50">[ 03 ]</div>
+              <div className="font-[Mono] text-white/50">[ 03 ]</div>
               <div className="text-3xl uppercase text-white mt-3">
                 Frontend Developer
               </div>
               <div className="flex justify-between font-light text-[14px]">
-                <div className="mt-3">SCHOLARIUM</div>
-                <div className="mt-3">2023</div>
+                <div className="mt-3 font-[Mono]">SCHOLARIUM</div>
+                <div className="mt-3 font-[Mono]">2023</div>
               </div>
             </div>
             <hr className="mt-4 text-white/10" />
